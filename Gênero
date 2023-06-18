@@ -1,0 +1,13 @@
+main::IO()
+
+duev::String->Double->Double
+
+duev v d
+ | v == "m" = (72.7*d)-58
+ | v == "f" = (62.1*d)-44.7
+
+main = do
+ putStrLn("Genero e altura")
+ v<-readLn
+ d<-readLn
+ putStrLn(show(duev v d))
