@@ -1,0 +1,12 @@
+main::IO()
+
+duev::Int->Int
+
+duev v
+ | mod v 2 == 0 = "Par"
+ | otherwise = "Impar"
+
+main = do
+ putStrLn("Numero")
+ v<-readLn
+ putStrLn(show(duev v))
