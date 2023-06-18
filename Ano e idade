@@ -1,0 +1,11 @@
+main::IO()
+
+duev::Int->Int->Int
+
+duev d v = d - v
+
+main = do
+ putStrLn("Ano atual e sua idade")
+ d<-readLn
+ v<-readLn
+ putStrLn("Ano de nascimento: "++show(duev d v))
