@@ -1,0 +1,16 @@
+main::IO()
+
+duev::Double->Double
+duev2::Double->Double
+duev3::Double->Double
+
+duev d = d - (d*0.275)
+duev2 g = g
+duev3 h = h*0.275
+
+main = do
+ putStrLn("Salário")
+ d<-readLn
+ putStrLn("Salário "++show(duev2 d))
+ putStrLn("Imposto "++show(duev3 d))
+ putStrLn("Resultado "++show(duev d))
