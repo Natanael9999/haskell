@@ -1,0 +1,12 @@
+main::IO()
+
+duev::String->String->String
+
+duev v t
+ | v == "F" && t == "casada" = "Quanto tempo de casada?"
+
+main = do
+ putStrLn("Sexo e estado civil")
+ v<-readLn
+ t<-readLn
+ putStrLn(""++show(duev v t))
