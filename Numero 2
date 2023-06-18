@@ -1,0 +1,12 @@
+main::IO()
+
+duev::Int->Int
+
+duev v
+ | mod v 2 == 0 = v+5
+ | otherwise = v+8
+
+main = do
+ putStrLn("Numero")
+ v<-readLn
+ putStrLn(show(duev v))
