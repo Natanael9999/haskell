@@ -1,0 +1,15 @@
+main::IO()
+
+duev::Double->Double->Double
+
+duev v d
+ | v == 1 = d*0.9
+ | v == 2 = d*0.85
+ | v == 3 = d
+ | v == 4 = d*1.1
+
+main = do
+ putStrLn("opcao 1, dinheiro ou cheque, opcao 2, cartao de credito, opcao 3, etiqueta, opcao 4, etiqueta mais 10 porcento")
+ v<-readLn
+ d<-readLn
+ putStrLn(show(duev v d))
