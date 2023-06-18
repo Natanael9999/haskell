@@ -1,0 +1,17 @@
+main::IO()
+
+duev::Double->Double->Double->String
+
+duev v d t
+ | v + d*2 + t*3 >= 90 = "A"
+ | v + d*2 + t*3 >= 75 && v + d*2 + t*3 < 90 = "B"
+ | v + d*2 + t*3 >= 60 && v + d*2 + t*3 < 75 = "C"
+ | v + d*2 + t*3 >= 40 && v + d*2 + t*3 < 60 = "D"
+ | v + d*2 + t*3 < 60 = "E"
+
+main = do
+ putStrLn("Digite as notas")
+ v<-readLn
+ d<-readLn
+ t<-readLn
+ putStrLn(show(duev v d t))
