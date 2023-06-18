@@ -1,0 +1,13 @@
+main::IO()
+
+duev::Double->Double->String
+
+duev d v
+ | d > v = "O primeiro e maior"
+ | otherwise = "O segundo e maior"
+
+main = do
+ putStrLn("Valores")
+ d<-readLn
+ v<-readLn
+ putStrLn("Resultado "++show(duev d v))
