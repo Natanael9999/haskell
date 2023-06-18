@@ -1,0 +1,14 @@
+main::IO()
+
+duev::Double->Double->Double->String
+
+duev d v t
+ | d + v > t = "A soma de A + B e maior que C"
+ | otherwise = "A soma de A + B não e maior que C"
+
+main = do
+ putStrLn("Valores")
+ d<-readLn
+ v<-readLn
+ t<-readLn
+ putStrLn("Resultado "++show(duev d v t))
