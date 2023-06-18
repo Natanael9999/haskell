@@ -1,0 +1,15 @@
+main::IO()
+
+duev::Double->Double->String
+
+duev v d
+ | d/v^2 < 18.5 = "Abaixo do peso"
+ | d/v^2 >= 18.5 && d/v^2 < 25 = "Peso normal"
+ | d/v^2 >= 25 && d/v^2 < 30 = "Acima do peso"
+ | d/v^2 > 30 = "Obeso"
+
+main = do
+ putStrLn("altura e peso")
+ v<-readLn
+ d<-readLn
+ putStrLn(show(duev v d))
