@@ -1,0 +1,11 @@
+main::IO()
+
+duev::Int->Int->Int
+
+duev d v = d*360 + v*60
+
+main = do
+ putStrLn("Digite as horas e minutos")
+ d<-readLn
+ v<-readLn
+ putStrLn("A quantidade segundos e "++show(duev d v))
