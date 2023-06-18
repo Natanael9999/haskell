@@ -1,0 +1,12 @@
+main::IO()
+
+duev::Int->Int
+
+duev v
+ | v == 1 = 1
+ | v > 1 = v + duev(v - 1)
+
+main = do
+ putStrLn("Valores")
+ v<-readLn
+ putStrLn(show(duev v))
