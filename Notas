@@ -1,0 +1,14 @@
+main::IO()
+
+duev::Double->Double->Double->String
+
+duev d v t
+ | (d+v+t)/3 >= 7 = "Aprovado"
+ | otherwise = "Reprovado"
+
+main = do
+ putStrLn("Notas")
+ d<-readLn
+ v<-readLn
+ t<-readLn
+ putStrLn("Resultado "++show(duev d v t))
