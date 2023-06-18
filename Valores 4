@@ -1,0 +1,14 @@
+main::IO()
+
+duev::Int->Int
+
+duev v d
+ | v == 0 = deuv = d
+ | d == 0 = deuv = v
+ | otherwise = deuv(v mod d v)
+
+main = do
+ putStrLn("Valores")
+ v<-readLn
+ d<-readLn
+ putStrLn(show(duev v d))
