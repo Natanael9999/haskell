@@ -1,0 +1,14 @@
+main::IO()
+
+duev::Int->Int
+
+duev v d
+ | d == 0 = deuv 0
+ | d > 0 = d * v(d (v – 1))
+ | d < 0 = 1/v(d (v (-d))
+
+main = do
+ putStrLn("Valores")
+ v<-readLn
+ d<-readLn
+ putStrLn(show(duev v d))
