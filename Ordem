@@ -1,0 +1,18 @@
+main::IO()
+
+duev::Int->Int->Int->String
+
+duev v d t
+ | v > d && v > t && d > t = "Primeiro, segundo e terceiro"
+ | v > d && v > t && t > d = "Primeiro, terceiro e segundo"
+ | d > v && d > t && v > t = "Segundo, primeiro e terceiro"
+ | d > v && d > t && t > v = "Segundo, terceiro e primeiro"
+ | t > d && t > v && d > v = "Terceiro, segundo e primeiro"
+ | t > d && t > v && v > d = "Terceiro, primeiro e segundo"
+
+main = do
+ putStrLn("Numero")
+ v<-readLn
+ d<-readLn
+ t<-readLn
+ putStrLn(show(duev v d t))
