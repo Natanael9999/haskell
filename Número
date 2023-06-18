@@ -1,0 +1,12 @@
+main::IO()
+
+duev::Int->Int
+
+duev v
+ | v > 0 = v*2
+ | v < 0 = v*3
+
+main = do
+ putStrLn("Numero")
+ v<-readLn
+ putStrLn(show(duev v))
