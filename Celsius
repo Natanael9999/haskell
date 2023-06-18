@@ -1,0 +1,10 @@
+main::IO()
+
+duev::Double->Double
+
+duev d = (d*1.8)+32
+
+main = do
+ putStrLn("Digite os graus celsius")
+ d<-readLn
+ putStrLn("Os graus em fahrenheit e "++show(duev d))
